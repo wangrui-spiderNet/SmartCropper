@@ -53,9 +53,6 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-
-
-
     }
 
     @Override
@@ -67,7 +64,7 @@ public class MainActivity extends AppCompatActivity {
         if (requestCode == 100 && photoFile.exists()) {
             Bitmap bitmap = BitmapFactory.decodeFile(photoFile.getPath());
             ivShow.setImageBitmap(bitmap);
-
+            tagContainerLayout.removeAllViews();
             ivShow.post(new Runnable() {
                 @Override
                 public void run() {
