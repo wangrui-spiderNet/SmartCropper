@@ -33,11 +33,11 @@
     <ImageView
         android:id="@+id/iv_show"
         android:layout_below="@+id/layoutAction"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         android:layout_gravity="center_horizontal"
         android:background="@android:color/darker_gray"
-        android:scaleType="centerInside"/>
+        android:scaleType="fitXY"/>
 
     <me.pqpo.smartcropper.widget.TagContainerLayout
         android:id="@+id/tagLayout"
