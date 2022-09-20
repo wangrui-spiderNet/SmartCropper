@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+<RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="10dp">
 
-
     <LinearLayout
+        android:id="@+id/layoutAction"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center_horizontal"
@@ -32,12 +32,18 @@
 
     <ImageView
         android:id="@+id/iv_show"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_below="@+id/layoutAction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        android:layout_marginTop="10dp"
         android:background="@android:color/darker_gray"
         android:scaleType="centerInside"/>
 
+    <me.pqpo.smartcropper.widget.TagContainerLayout
+        android:id="@+id/tagLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/layoutAction"
+        />
 
-</LinearLayout>
+</RelativeLayout>
